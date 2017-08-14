@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<audio id="music2" src="动物世界.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>
+<a href="javascript:playPause();"><img src="images/the3.jpg" width="20" height="20" id="music_btn2" border="0"></a>
+</body>
+<script>
+    function playPause() {
+        var music = document.getElementById('music2');
+        var music_btn = document.getElementById('music_btn2');
+        if (music.paused){
+            music.play();
+            music_btn.src = 'images/the2.jpg';
+        }
+        else{
+            music.pause();
+            music_btn.src = 'the1.jpg';
+        }
+    }
+</script>
+</html>
